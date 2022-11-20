@@ -1,0 +1,121 @@
+.containerMoviesPopular__cardMovies, .containerMoviesTopRated__cardMovies{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+}
+.containerMoviesPopular__cardMoviesDiv, .containerMoviesTopRated__cardMoviesDiv{
+    width: 24%;
+}
+.containerMoviesPopular__containerImage, .containerMoviesTopRated__containerImage{
+    width: 100%;
+}
+
+.containerMoviesPopular__containerImage img,.containerMoviesTopRated__imageMovie{
+    width: 100%;
+    height: 20rem;
+    border-radius: 7px 7px 0 0;
+}
+
+.containerMoviesPopular__titleMovie,.containerMoviesTopRated__titleMovie{
+    font-size: 25px;
+}
+
+.textElement{
+    border-radius: 0 0 5px 5px;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.textElement span{
+    padding: 0.2rem 0.7rem;
+    border-radius: 2px;
+    height: 2rem;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+}
+
+.voteAverage{
+    padding: 0.2rem 0.7rem;
+    border-radius: 2px;
+    height: 2rem;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    width: 7%;
+    justify-content: center;
+}
+
+.containerMoviesPopular__titleMovie{
+    margin: 0;
+}
+.containerMoviesTopRated__title, .containerMoviesPopular__title{
+    width: 90%;
+    margin: 10px auto;
+}
+.verde{
+    color: lightgreen;
+}
+.vermelho{
+    color: lightcoral;
+}
+
+.sinopse{
+    text-align: justify;
+}
+.containerIconReturn{
+    width: 90%;
+    margin: auto;
+    padding: 20px 0 0 0;
+}
+
+.containerIconReturn a{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    font-size: 18px;
+    width: 80px;
+    background: #1e1e1e;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    color: cornflowerblue;
+}
+
+.containerIconReturn a svg{
+    width: 30px;
+    height: 22px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .containerMoviesPopular__cardMoviesDiv, .containerMoviesTopRated__cardMoviesDiv {
+        width: 48%;
+    }
+    .containerMoviesTopRated__title, .containerMoviesPopular__title {
+        font-size: 26px;
+    }
+    .containerMoviesPopular__titleMovie, .containerMoviesTopRated__titleMovie {
+        font-size: 17px;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px)  and (max-width: 992px) {
+    .containerMoviesPopular__cardMoviesDiv, .containerMoviesTopRated__cardMoviesDiv {
+        width: 48%;
+    }
+    .containerMoviesTopRated__title, .containerMoviesPopular__title {
+        font-size: 35px;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .containerMoviesPopular__cardMoviesDiv, .containerMoviesTopRated__cardMoviesDiv {
+        width: 32%;
+    }
+}
